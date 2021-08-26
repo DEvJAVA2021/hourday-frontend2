@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../PageTemplate/TodoItemList';
+import './TodoItem.scss';
 
 class TodoItem extends Component {
     render() {
