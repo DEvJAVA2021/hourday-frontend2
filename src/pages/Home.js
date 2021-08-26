@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import PageTemplate from '../components/PageTemplate/PageTemplate';
-import TodoInput from '../components/PageTemplate/TodoInput';
-import TodoItemList from '../components/PageTemplate/TodoItemList';
+import PageTemplate from '../components/Templates/PageTemplate';
+import TodoInput from '../components/Templates/TodoInput';
+import TodoItemList from '../components/Templates/TodoItemList';
 
 class Home extends Component {
     id = 3 //예시로 0,1,2를 넣었기 때문에 3
