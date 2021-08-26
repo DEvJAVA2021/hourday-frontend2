@@ -1,7 +1,7 @@
 import React from 'react';
- 
+
 class Content extends React.Component {
-    render(){
+    render() {
         return (
             <div>
                 <h2>Content</h2>
@@ -9,5 +9,5 @@ class Content extends React.Component {
         );
     }
 }
- 
+
 export default Content;

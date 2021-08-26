@@ -1,0 +1,44 @@
+@import "../../styles/utils";
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Gothic+A1&display=swap");
+
+.form {
+  //border-top: 1px solid #ced4da;
+  border-bottom: 2px solid $oc-gray-4;
+  display: flex;
+  padding: 1.5rem;
+
+  input {
+    flex: 1; //부모 요소에서 add-button을 제외한 나머지 공간 차지
+    font-size: 1rem;
+    font-family: "Gothic A1", sans-serif;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid $oc-gray-4;
+    &:focus {
+      border-bottom: 1px solid $oc-gray-4;
+    }
+  }
+}
+
+.create-button {
+  width: 5rem;
+  height: 2rem;
+  margin-left: 1rem;
+  border: 1px solid $oc-gray-4;
+  color: $oc-gray-4;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 2rem;
+  cursor: pointer;
+
+  &:hover {
+    background: $oc-gray-4;
+    color: white;
+  }
+
+  &:active {
+    background: $oc-gray-4;
+  }
+}

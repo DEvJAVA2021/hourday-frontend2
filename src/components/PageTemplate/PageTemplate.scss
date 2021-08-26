@@ -1,4 +1,5 @@
 @import "../../styles/utils";
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Gothic+A1&display=swap");
 
 .todo-list-template {
   margin-top: 5rem;
@@ -8,6 +9,7 @@
   background: white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding-top: 2rem;
+  font-family: "Gothic A1", sans-serif;
 }
 
 .title {
@@ -17,6 +19,7 @@
   font-weight: 100;
   background: $oc-pink-8;
   color: white;
+  font-family: "Gaegu", cursive;
 }
 .form-wrapper {
   text-align: center;
