@@ -19,24 +19,20 @@ const RadioButton = ({history}) => {
 
   return (
     <>
-      <BackButton onClick={handleBackList} />
-
       <RadioBtnContainer>
 
         <RadioBtnBox>
-          <RadioBtn type='radio' id='전체공개' checked={inputStatus === 'public'} onClick={() => handleClickRadioButton('public')}/>
-          <label htmlFor='public'>Radio</label>
+          <RadioBtn type='radio' id='public' checked={inputStatus === 'public'} onClick={() => handleClickRadioButton('public')}/>
+          <label >전체공개</label>
         </RadioBtnBox>
 
         <RadioBtnBox>
-          <RadioBtn type='radio' id='비공개' checked={inputStatus === 'private'} onClick={() => handleClickRadioButton('private')}/>
-          <label htmlFor='private'>Radio1</label>
+          <RadioBtn type='radio' id='private' checked={inputStatus === 'private'} onClick={() => handleClickRadioButton('private')}/>
+          <label >비공개</label>
         </RadioBtnBox>
 
 
       </RadioBtnContainer>
-
-      <StateValue> state value : {inputStatus} </StateValue>
 
      </>
   )

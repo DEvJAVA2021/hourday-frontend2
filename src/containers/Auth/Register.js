@@ -13,7 +13,8 @@ class Register extends Component {
                 <InputWithLabel label="닉네임" name="username" placeholder="닉네임"/>
                 <InputWithLabel label="비밀번호" name="password" placeholder="비밀번호" type="password"/>
                 <InputWithLabel label="비밀번호 확인" name="passwordConfirm" placeholder="비밀번호 확인" type="password"/>
-                <Route exact path="/radiobutton" component={AuthRadioButton} />
+                <AuthRadioButton/ >
+                {/* <Route exact path="/radiobutton" component={AuthRadioButton} /><AuthTadioButton /> */}
                 <AuthButton>회원가입</AuthButton>
                 <RightAlignedLink to="/auth/login">로그인</RightAlignedLink>
             </AuthContent>
