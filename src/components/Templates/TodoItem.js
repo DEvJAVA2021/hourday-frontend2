@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import './TodoItem.scss';
 
 class TodoItem extends Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.props.checked !== nextProps.checked;
+    }
+
     render() {
-        const { text, checked, id, onToggle, onRemove } = this.props;
+        const { text, checked, color, id, onToggle, onRemove } = this.props;
 
         return (
             <div className="todo-item" onClick={() => onToggle(id)}>
@@ -12,7 +16,7 @@ class TodoItem extends Component {
                     onRemove(id)
                 }
                 }>&times;</div>
-                <div className={`todo-text ${checked && 'checked'}`}>
+                <div className={`todo-text ${checked && 'checked'}`} style={{ color }}>
                     <div>{text}</div>
                 </div>
                 {

@@ -11,9 +11,9 @@ class Home extends Component {
     state = {
         input: '',
         todos: [
-            { id: 0, text: '리액트 공부', checked: false },
-            { id: 1, text: '리액트 에러 고치기', checked: false },
-            { id: 2, text: '안녕', checked: true }
+            { id: 0, text: 'spring boot 공부', checked: false },
+            { id: 1, text: 'react 에러 고치기', checked: false },
+            { id: 2, text: '발표 시연 영상 촬영', checked: true }
         ],
         color: '#343a40'
     }

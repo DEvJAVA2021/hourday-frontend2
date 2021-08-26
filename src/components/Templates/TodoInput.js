@@ -1,12 +1,12 @@
 import React from 'react';
 import './TodoInput.scss';
 
-const TodoInput = ({ value, onChange, onCreate, onKeyPress }) => {
+const TodoInput = ({ value, onChange, onCreate, onKeyPress, color }) => {
     return (
         <div className="form">
-            <input value={value} onChange={onChange} onKeyPress={onKeyPress} />
+            <input value={value} onChange={onChange} onKeyPress={onKeyPress} style={{ color }} />
             <div className="create-button" onClick={onCreate}>
-                +
+                추가
             </div>
         </div>
     )
