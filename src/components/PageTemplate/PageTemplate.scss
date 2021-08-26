@@ -1,0 +1,30 @@
+@import "../../styles/utils";
+
+.todo-list-template {
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: 500px;
+  width: 1000px;
+  background: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding-top: 2rem;
+}
+
+.title {
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 100;
+  background: $oc-pink-8;
+  color: white;
+}
+.form-wrapper {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.todos-wrapper {
+  margin-top: 2rem;
+}
