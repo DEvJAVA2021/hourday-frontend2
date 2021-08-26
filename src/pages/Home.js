@@ -9,9 +9,9 @@ class Home extends Component {
     state = {
         input: '',
         todos: [
-            { id: 0, text: 'spring 공부', checked: false },
+            { id: 0, text: '리액트 공부', checked: false },
             { id: 1, text: '리액트 에러 고치기', checked: false },
-            { id: 2, text: '발표 자료 제작', checked: true }
+            { id: 2, text: '안녕', checked: true }
         ]
     }
 
@@ -55,12 +55,25 @@ class Home extends Component {
         });
     }
 
+    handleRemove = (id) => {
+        const { todos } = this.state;
+        const index = todos.findIndex(todo => todo.id === id);
+
+        this.setState({
+            todos: [
+                ...todos.slice(0, index),
+                ...todos.slice(index + 1, todos.length)
+            ]
+        });
+    }
+
     render() {
         const { input, todos } = this.state;
         const {
             handleChange,
             handleCreate,
-            handleKeyPress
+            handleKeyPress,
+            handleRemove
         } = this;
 
         return (
@@ -72,11 +85,14 @@ class Home extends Component {
                     onCreate={handleCreate}
                 />
 
-                <TodoItemList todos={todos} onToggle={this.handleToggle} />
+                <TodoItemList
+                    todos={todos}
+                    onToggle={this.handleToggle}
+                    onRemove={handleRemove}
+                />
             </PageTemplate>
         );
     }
 }
-
 
 export default Home;
