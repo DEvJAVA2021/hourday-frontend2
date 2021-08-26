@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AuthContent } from 'components/Auth';
+import { AuthContent } from '../../components/Auth';
 
 class Register extends Component {
     render() {
