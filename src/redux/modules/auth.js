@@ -12,10 +12,11 @@ const initialState = Map({
     register: Map({
         form: Map({
             email: '',
-           
             username: '',
+            nickname: '',
             password: '',
             passwordConfirm: ''
+            
         })
     }),
     login: Map({
