@@ -1,0 +1,41 @@
+@import "../../styles/utils";
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Gothic+A1&display=swap");
+
+.todo-list-template {
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: 500px;
+  width: 1000px;
+  background: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding-top: 2rem;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.palette-template {
+  display: flex;
+  justify-content: center;
+  background: #f1f3f5;
+  display: block;
+  padding: 2rem;
+}
+
+.title {
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 100;
+  background: $oc-pink-8;
+  color: white;
+  font-family: "Gaegu", cursive;
+}
+.form-wrapper {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.todos-wrapper {
+  margin-top: 2rem;
+}

@@ -7,11 +7,11 @@ import HeaderContainer from './containers/Base/HeaderContainer';
 class App extends Component {
   render() {
     return (
-        <div>
-                <HeaderContainer/>
-                <Route exact path="/" component={Home}/>
-                <Route path="/auth" component={Auth}/>
-        </div>
+      <div>
+        <HeaderContainer />
+        <Route exact path="/" component={Home} />
+        <Route path="/auth" component={Auth} />
+      </div>
     );
   }
 }
